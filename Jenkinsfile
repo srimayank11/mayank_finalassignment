@@ -11,7 +11,7 @@ pipeline {
       parallel {
         stage('Build Docker Image') {
           steps {                     
-            sh 'sudo docker build . -t mayank_finalassignment:latest public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'             
+            sh 'docker build . -t mayank_finalassignment:latest public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'             
           }
         }        
 
