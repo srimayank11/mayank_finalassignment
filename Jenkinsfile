@@ -2,7 +2,7 @@ pipeline {
   stages {
     stage('Git Checkout') {
       steps {
-        checkout scm
+        sh 'echo mayank'
       }
     }
 
