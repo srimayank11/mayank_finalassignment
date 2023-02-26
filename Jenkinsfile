@@ -11,7 +11,7 @@ pipeline {
       parallel {
         stage('Build Docker Image') {
           steps {                     
-            sh 'sudo docker build .'             
+            sh 'docker build .'             
           }
         }        
 
