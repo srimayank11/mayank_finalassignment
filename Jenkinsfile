@@ -1,5 +1,5 @@
 pipeline {  
-   agent any     
+  agent any  
   stages {
     stage('Git Checkout') {
       steps {
@@ -10,8 +10,8 @@ pipeline {
     stage('Build Docker Image') {
       parallel {
         stage('Build Docker Image') {
-          steps {                     
-            sh 'docker build .'             
+          steps {
+            sh 'echo mayank'            
           }
         }        
 
