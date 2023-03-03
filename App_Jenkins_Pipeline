@@ -1,0 +1,19 @@
+pipeline {  
+ agent {
+    node {
+        label 'app'
+    }
+} 
+  stages {
+       stage('Pull ECR image and run Docker') {
+      parallel {
+        stage('Pull ECR image and run Docker') {
+          steps {
+            sh 'docker pull public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest && docker run -itd -p 5002:8081 -t public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
+          }
+        }        
+
+      }
+    }
+  }
+}
