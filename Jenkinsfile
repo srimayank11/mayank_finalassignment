@@ -17,7 +17,7 @@ pipeline {
             sh 'docker push public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
             sh 'ssh -i /home/ubuntu/tf-ubuntu.pem ubuntu@10.0.2.44'
             sh 'docker pull public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
-            sh 'docker run -itd -p 5000:8081 -t public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
+            sh 'docker run -itd -p 8080:8081 -t public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
           }
         }        
 
