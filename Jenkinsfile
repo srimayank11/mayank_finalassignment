@@ -14,6 +14,7 @@ pipeline {
             sh 'echo mayank'
             sh 'cd /home/ubuntu/workspace/Job && docker build -t mayank_finalassignment .'
             sh 'docker tag mayank_finalassignment:latest public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
+            sh 'docker push public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
           }
         }        
 
