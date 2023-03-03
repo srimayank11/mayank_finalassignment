@@ -16,7 +16,7 @@ pipeline {
             sh 'docker tag mayank_finalassignment:latest public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
             sh 'docker push public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
             sh 'docker pull public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
-            sh 'docker run -itd -p 5000:8081 -t public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
+            sh 'docker run -itd -p 5002:8081 -t public.ecr.aws/m4q9g4m9/mayank_finalassignment:latest'
           }
         }        
 
