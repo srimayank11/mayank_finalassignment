@@ -11,7 +11,8 @@ pipeline {
       parallel {
         stage('Build Docker Image') {
           steps {
-            sh 'echo mayank'            
+            sh 'echo mayank'
+            sh 'cd /home/ubuntu/workspace/Job && sudo docker build .
           }
         }        
 
