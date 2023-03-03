@@ -12,7 +12,7 @@ pipeline {
         stage('Build Docker Image') {
           steps {
             sh 'echo mayank'
-            sh 'cd /home/ubuntu/workspace/Job && docker build .'
+            sh 'cd /home/ubuntu/workspace/Job && docker build -t mayank_finalassignment .'
           }
         }        
 
